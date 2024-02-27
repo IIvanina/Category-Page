@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title></title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/webfonts/css/fontawesome.css" rel="stylesheet">
+    <link href="css/webfonts/css/brands.css" rel="stylesheet">
+    <link href="css/webfonts/css/solid.css" rel="stylesheet">
+    <!-- Swiper JS -->
+
+    <style type="text/css">
+        .navbar .megamenu {
+            padding: 1rem;
+        }
+
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+
+            .navbar .has-megamenu {
+                position: static !important;
+            }
+
+            .navbar .megamenu {
+                left: 0;
+                right: 0;
+                width: 100%;
+                margin-top: 0;
+            }
+
+        }
+
+        /* ============ desktop view .end// ============ */
+
+
+        /* ============ mobile view ============ */
+        @media(max-width: 991px) {
+
+            .navbar.fixed-top .navbar-collapse,
+            .navbar.sticky-top .navbar-collapse {
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top: 10px;
+            }
+        }
+
+        /* ============ mobile view .end// ============ */
+    </style>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+        // DOMContentLoaded  end
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="announcement">
+        <div class="container px-4 ">
+            <ul class="navbar-nav ">
+                <li class="nav-item text-center">
+                    <a class="nav-link" aria-current="page" href="mailto:OFFICE@ASPIRATOR.BG">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="d-none d-xl-block">OFFICE@ASPIRATOR.BG</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" aria-current="page" href="tell:0882 62 38 31">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="d-none d-xl-block">0882 62 38 31</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownLang" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-earth-europe"></i>
+                        <span class="d-none d-xl-block">Bulgarian</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownLang">
+                        <li><a class="dropdown-item" href="#!">English</a></li>
+
+                        <li><a class="dropdown-item" href="#!">Spanish</a></li>
+                        <li><a class="dropdown-item" href="#!">Italian</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownUser" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="far fa-user"></i>
+                        <span class="d-none d-xl-block">Акаунт</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownUser">
+                        <li><a class="dropdown-item" href="#!">Хронология</a></li>
+
+                        <li><a class="dropdown-item" href="#!">Настройки</a></li>
+                        <li><a class="dropdown-item" href="#!">Излез</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white main">
+        <div class="container px-4 ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#!"><img width="350" height="71" src="assets/icons/logo.svg"
+                    alt="aspirator.bg"></a>
+
+            <div class="d-flex flex-row flex-nowrap free__delivery__box">
+                <img width="60" height="60" src="assets/icons/truck 1.svg" alt="free delivery">
+                <div class="d-flex flex-column free__delivery">
+                    <span>Безплатна</span>
+                    <span>Доставка!</span>
+                </div>
+            </div>
+            <div>
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="input-search" placeholder="Търсене" name="q">
+                        <div class="input-group-btn">
+                            <button class="btn btn-pink" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex header-form align-items-center">
+                <form class="d-flex me-3 like-form">
+                    <button class="btn like" type="submit">
+                        <img width="20" height="20" src="assets/icons/love.svg" alt="like">
+                        <span class="badge bg-dark text-white rounded-pill">0</span>
+                    </button>
+                </form>
+
+                <form class="d-flex cart-form align-items-center">
+                    <button class="btn cart" type="submit">
+                        <img width="20" height="20" src="assets/icons/shopping-cart.svg" alt="shopping-cart">
+                        <span class="badge bg-pink text-white rounded-pill">2</span>
+                    </button>
+                    <div class="cart_info d-flex flex-column ms-1">
+                        <span class="cart__info__text">Кошница</span>
+                        <div>
+                            <span class="cart__info__price">599</span>
+                            <span class="cart__info__price_coin">00</span>
+                            <span class="cart__info__price_currency">лв</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mega menu-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-pink ">
+        <div class="container px-4 ">
+
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            <img width="30" height="30" src="assets/icons/menu-icon.svg" alt="dishwasher">
+                            Категории
+                        </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3 mega-first-box">
+                                <div class="col-lg-2 col-12">
+                                    <div class="col-megamenu">
+                                        <button class="btn btn-dark mt-auto all__product" href="#">Виж всички</button>
+                                        <h5 class="nav-title">
+                                            <img width="20" height="20" src="assets/icons/hood.svg" alt="hood">
+                                            &ensp;Аспирарори
+                                            <i class="fas fa-chevron-down arrow-icon"></i>
+                                        </h5>
+                                        <ul class="list-unstyled">
+
+                                            <li><a href="#">Шумопонижаващи системи за аспиратори - Въздуховоди</a></li>
+                                            <li><a href="#">Downdraft аспиратори</a></li>
+                                            <li><a href="#">Аспиратори за вграждане</a></li>
+                                            <li><a href="#">Декоративни аспиратори (за стенен монтаж)</a></li>
+                                            <li><a href="#">Островни аспиратори</a></li>
+                                            <li><a href="#">Ретро аспиратори</a></li>
+                                            <li><a href="#">Традиционни аспиратори (под шкаф)</a></li>
+                                            <li><a href="#">Ъглови аспиратори</a></li>
+                                        </ul>
+                                        <h5 class="nav-title">
+                                            <img width="20" height="20" src="assets/icons/dishwasher.svg"
+                                                alt="dishwasher">
+                                            &ensp;Съдомиялни
+                                            <i class="fas fa-chevron-down arrow-icon"></i>
+                                        </h5>
+                                        <ul class="list-unstyled">
+
+                                            <li><a href="#">Свободностоящи съдомиялни</a></li>
+                                            <li><a href="#">Съдомиялни за вграждане</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-12">
+                                    <div class="col-megamenu">
+                                        <h5 class="nav-title">
+                                            <img width="20" height="20" src="assets/icons/induction-stove.svg"
+                                                alt="induction stove">
+                                            &ensp;Плотове за вграждане
+                                            <i class="fas fa-chevron-down arrow-icon"></i>
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Газови плотове за вграждане</a></li>
+                                            <li><a href="#">Индукционни плотове</a></li>
+                                            <li><a href="#">Комбинирани плотове</a></li>
+                                            <li><a href="#">Ретро плотове</a></li>
+                                            <li><a href="#">Стъклокерамични плотове</a></li>
+                                            <li><a href="#">Ретро аспиратори</a></li>
+                                        </ul>
+                                        <h5 class="nav-title">
+                                            <img width="20" height="20" src="assets/icons/washer.svg" alt="washer">
+                                            &ensp;Перални и сушилни
+                                            <i class="fas fa-chevron-down arrow-icon"></i>
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Перални машини</a></li>
+                                            <li><a href="#">Перални със сушилни</a></li>
+                                            <li><a href="#">Сушилни машини</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-12">
+                                    <div class="col-megamenu">
+                                        <h5 class="nav-title">
+                                            <img width="20" height="20" src="assets/icons/electric-stove.svg"
+                                                alt="electric stove">
+                                            &ensp;Фурни за вграждане
+                                            <i class="fas fa-chevron-down arrow-icon"></i>
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Кафемашини за вграждане</a></li>
+                                            <li><a href="#">Микровълнови за вграждане</a></li>
+                                            <li><a href="#">Ретро фурни</a></li>
+                                            <li><a href="#">Свободностоящи микровълнови</a></li>
+                                            <li><a href="#">Фурни за вграждане на 60 см</a></li>
+                                            <li><a href="#">Фурни за вграждане на 90 см</a></li>
+                                            <li><a href="#">Фурни на пара</a></li>
+                                            <li><a href="#">Фурни с пиролиза</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-12">
+                                    <div class="col-megamenu">
+                                        <h5 class="nav-title">
+                                            <img width="20" height="20" src="assets/icons/coffee-machine.svg"
+                                                alt="coffee machine">
+                                            &ensp;Дребна техника
+                                            <i class="fas fa-chevron-down arrow-icon"></i>
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Електрически кани</a></li>
+                                            <li><a href="#">Кафемашини</a></li>
+                                            <li><a href="#">Кухненски роботи</a></li>
+                                            <li><a href="#">Месомелачки</a></li>
+                                            <li><a href="#">Миксери</a></li>
+                                            <li><a href="#">Пасатори и блендери</a></li>
+                                            <li><a href="#">Прахосмукачки</a></li>
+                                            <li><a href="#">Сокоизтисквачки</a></li>
+                                            <li><a href="#">Тостери</a></li>
+                                            <li><a href="#">Хлебопекарни</a></li>
+                                            <li><a href="#">Ютии и парни станции</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-12">
+                                    <div class="col-megamenu">
+                                        <h5 class="nav-title">
+                                            <img width="20" height="20" src="assets/icons/sink.svg" alt="sink">
+                                            &ensp;Кухненски мивки
+                                            <i class="fas fa-chevron-down arrow-icon"></i>
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Иноксови мивки</a></li>
+                                            <li><a href="#">Композитни мивки
+                                                    ( гранитни мивки )</a></li>
+                                            <li><a href="#">Кухненски мелници за отпадъци - Хидро Диспозер</a></li>
+                                            <li><a href="#">Кухненски смесители</a></li>
+                                        </ul>
+                                        <h5 class="nav-title">
+                                            <img width="20" height="20" src="assets/icons/fridge.svg" alt="sink">
+                                            &ensp;Хладилници
+                                            <i class="fas fa-chevron-down arrow-icon"></i>
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Хладилник Side by Side</a></li>
+                                            <li><a href="#">Виноохладители</a></li>
+                                            <li><a href="#">Хладилници за вграждане</a></li>
+                                            <li><a href="#">Свободностоящи хладилници</a></li>
+                                            <li><a href="#">Фризери</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-12">
+                                    <div class="col-megamenu">
+                                        <h5 class="nav-title">
+                                            <img width="20" height="20" src="assets/icons/conveyor.svg" alt="sink">
+                                            &ensp;Производители
+                                            <i class="fas fa-chevron-down arrow-icon"></i>
+                                        </h5>
+                                        <ul class="list-unstyled">
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003678_aeg_350 1.png" alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003679_bosch_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003680_cata_350 1.png"
+                                                        alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0014633_edesa_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003683_eurolux_350 1.png"
+                                                        alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003681_electrolux_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003682_elica_350 1.png"
+                                                        alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003684_faber_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003687_gorenje_350 1.png"
+                                                        alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003689_irobot_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003688_httpsaspiratorbgwp-contentuploads201904hansa_logo-150x51png_350 1.png"
+                                                        alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003690_leks_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003692_lino_350 1.png"
+                                                        alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003695_pyramis_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003691_liebherr_350 1.png"
+                                                        alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0017335_naber_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0015868_status_350 1.png"
+                                                        alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003697_teka_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0003696_smeg_350 1.png"
+                                                        alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0015670_falmec_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                            <li class="brands-box">
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0017333_tesy_350 1.png"
+                                                        alt="sink"></a>
+                                                <a href="#"><img width="80" height="20"
+                                                        src="assets/images/brands/0017334_hansgrohe_350 1.png"
+                                                        alt="sink"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                            <div class="mega-swiper-box">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"> <img width="50" height="50"
+                                                src="assets/icons/hood-2.svg" alt="hood"><span
+                                                class="">Аспирарори</span></div>
+                                        <div class="swiper-slide"> <img width="50" height="50"
+                                                src="assets/icons/induction-stove-2.svg" alt="hood"><span
+                                                class="">Плотове за вграждане</span></div>
+                                        <div class="swiper-slide"> <img width="50" height="50"
+                                                src="assets/icons/electric-stove-2.svg" alt="hood"><span class="">Фурни
+                                                за вграждане</span></div>
+                                        <div class="swiper-slide"> <img width="50" height="50"
+                                                src="assets/icons/coffee-machine-2.svg" alt="hood"><span class="">Дребна
+                                                техника</span></div>
+                                        <div class="swiper-slide"> <img width="50" height="50"
+                                                src="assets/icons/sink-2.svg" alt="hood"><span class="">Кухненски
+                                                мивки</span></div>
+                                        <div class="swiper-slide"> <img width="50" height="50"
+                                                src="assets/icons/washer-2.svg" alt="hood"><span class="">Перални и
+                                                сушилни</span></div>
+                                        <div class="swiper-slide"> <img width="50" height="50"
+                                                src="assets/icons/fridge-2.svg" alt="hood"><span
+                                                class="">Хладилници</span></div>
+                                        <div class="swiper-slide"> <img width="50" height="50"
+                                                src="assets/icons/dishwasher.svg" alt="hood"><span
+                                                class="">Съдомиялни</span></div>
+
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Специална оферта</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#">За Нас </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Новини</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Section-->
+    <section class="">
+        <div class="container-fluid title-category">
+            <div class="title-category-text">Аспирарори</div>
+        </div>
+        <div class="container px-2 px-lg-2">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Начало</a></li>
+                        <li class="breadcrumb-item"><a href="#">Аспиратори</a></li>
+
+                    </ol>
+                </nav>
+                <a class="btn-white-c btn-sort dropdown-toggle border show-on-mobile d-lg-none" data-bs-toggle="collapse" aria-expanded="false" href="#widgets_collapse" role="button" aria-expanded="true" aria-controls="widgets_collapse">
+                    Филтриране
+                </a>
+                <aside class="col-md-3  navbar-collapse collapse" id="widgets_collapse">
+                    <div class="card filter">
+                        <article class="active-filters">
+                            <header class="card-header main">
+                                <h6 class="title">Активни филтри</h6>
+                            </header>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <!-- Selected filters will be added here dynamically -->
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="price-range-filter">
+                            <header class="card-header">
+                                <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="true"
+                                    class="">
+                                    <h6 class="title">Ценови диапазон</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content collapse show" id="collapse_1" style="">
+                                <div class="card-body">
+                                    <div class="form-row d-flex">
+                                        <div class="form-group  d-flex align-items-center me-2">
+                                            <label for="minPrice">Мин:</label>
+                                            <input type="number" class="form-control price" id="minPrice"
+                                                placeholder="0,00">
+                                            <label for="minPrice">лв.</label>
+                                        </div>
+                                        <div class="form-group  d-flex align-items-center">
+                                            <label for="maxPrice">Макс:</label>
+                                            <input type="number" class="form-control price" id="maxPrice"
+                                                placeholder="8,499">
+                                            <label for="maxPrice">лв.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="price-range-filter">
+                            <header class="card-header">
+                                <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="false"
+                                    class="">
+                                    <h6 class="title">Цвят</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content collapse" id="collapse_2" style="">
+                                <div class="card-body">
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> Бял </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> Сив </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> Черен </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> Бежов </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="price-range-filter">
+                            <header class="card-header">
+                                <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="true"
+                                    class="">
+                                    <h6 class="title">Широчина в см.</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content collapse show" id="collapse_3" style="">
+                                <div class="card-body">
+                                    <div class="form-row d-flex">
+                                        <div class="form-group  d-flex align-items-center me-2">
+                                            <label for="minWidth">Мин:</label>
+                                            <input type="number" class="form-control price" id="minWidth"
+                                                placeholder="9">
+
+                                        </div>
+                                        <div class="form-group  d-flex align-items-center">
+                                            <label for="maxWidth">Макс:</label>
+                                            <input type="number" class="form-control price" id="maxWidth"
+                                                placeholder="120">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="price-range-filter">
+                            <header class="card-header">
+                                <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_4" aria-expanded="true"
+                                    class="">
+                                    <h6 class="title">Диаметър на изходна
+                                        тръба ø</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content collapse show" id="collapse_4" style="">
+                                <div class="card-body">
+                                    <div class="form-row d-flex">
+                                        <div class="form-group  d-flex align-items-center me-2">
+                                            <label for="minDiameter">Мин:</label>
+                                            <input type="number" class="form-control price" id="minDiameter"
+                                                placeholder="120">
+
+                                        </div>
+                                        <div class="form-group  d-flex align-items-center">
+                                            <label for="maxDiameter">Макс:</label>
+                                            <input type="number" class="form-control price" id="maxDiameter"
+                                                placeholder="150">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="price-range-filter">
+                            <header class="card-header">
+                                <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_5" aria-expanded="false"
+                                    class="">
+                                    <h6 class="title">Тип на аспиратора</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content collapse" id="collapse_5" style="">
+                                <div class="card-body">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Шумопонижаващи системи за аспиратори -
+                                            Въздуховоди
+                                            <b class="badge badge-pill badge-light float-right">120</b>
+                                        </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Downdraft аспиратори
+                                            <b class="badge badge-pill badge-light float-right">15</b>
+                                        </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Аспиратори за вграждане
+                                            <b class="badge badge-pill badge-light float-right">35</b>
+                                        </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Декоративни аспиратори (за стенен монтаж)
+                                            <b class="badge badge-pill badge-light float-right">89</b>
+                                        </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <div class="custom-control-label">Островни аспиратори
+                                            <b class="badge badge-pill badge-light float-right">30</b>
+                                        </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <div class="custom-control-label">Ретро аспиратори
+                                            <b class="badge badge-pill badge-light float-right">30</b>
+                                        </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <div class="custom-control-label">Традиционни аспиратори (под шкаф)
+                                            <b class="badge badge-pill badge-light float-right">30</b>
+                                        </div>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input">
+                                        <div class="custom-control-label">Ъглови аспиратори
+                                            <b class="badge badge-pill badge-light float-right">30</b>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="price-range-filter">
+                            <header class="card-header">
+                                <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_6" aria-expanded="true"
+                                    class="">
+                                    <h6 class="title">Брой двигатели</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content collapse show" id="collapse_6" style="">
+                                <div class="card-body">
+                                    <div class="form-row d-flex">
+                                        <div class="form-group  d-flex align-items-center me-2">
+                                            <label for="minMotor">Мин:</label>
+                                            <input type="number" class="form-control price" id="minMotor"
+                                                placeholder="1">
+
+                                        </div>
+                                        <div class="form-group  d-flex align-items-center">
+                                            <label for="maxMotor">Макс:</label>
+                                            <input type="number" class="form-control price" id="maxMotor"
+                                                placeholder="2">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="price-range-filter">
+                            <header class="card-header">
+                                <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_7" aria-expanded="false"
+                                    class="">
+                                    <h6 class="title">Енергиен клас</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content collapse" id="collapse_7" style="">
+                                <div class="card-body">
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> A </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> B </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> C </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> D </span>
+                                    </label>
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> F </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="price-range-filter">
+                            <header class="card-header">
+                                <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_8" aria-expanded="true"
+                                    class="">
+                                    <h6 class="title">Ниво на шум
+                                        на аспиратора dB</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content collapse show" id="collapse_8" style="">
+                                <div class="card-body">
+                                    <div class="form-row d-flex">
+                                        <div class="form-group  d-flex align-items-center me-2">
+                                            <label for="minDB">Мин:</label>
+                                            <input type="number" class="form-control price" id="minDB" placeholder="32">
+
+                                        </div>
+                                        <div class="form-group  d-flex align-items-center">
+                                            <label for="maxDB">Макс:</label>
+                                            <input type="number" class="form-control price" id="maxDB" placeholder="68">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="price-range-filter">
+                            <header class="card-header">
+                                <a href="#" data-bs-toggle="collapse" data-bs-target="#collapse_9" aria-expanded="true"
+                                    class="">
+                                    <h6 class="title">Мощност на
+                                        аспиратора m3/h</h6>
+                                </a>
+                            </header>
+                            <div class="filter-content collapse show" id="collapse_9" style="">
+                                <div class="card-body">
+                                    <div class="form-row d-flex">
+                                        <div class="form-group  d-flex align-items-center me-2">
+                                            <label for="minPower">Мин:</label>
+                                            <input type="number" class="form-control price" id="minPower"
+                                                placeholder="165">
+
+                                        </div>
+                                        <div class="form-group  d-flex align-items-center">
+                                            <label for="maxPower">Макс:</label>
+                                            <input type="number" class="form-control price" id="maxPower"
+                                                placeholder="850">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </aside>
+                <main class="col-md-9">
+                    <div class="category-swiper-box">
+                        <div class="swiper categorySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="swiper-sub-category-1">
+                                        <span class="swiper-sub-category-title">Шумопонижаващи
+                                            системи за аспиратори -
+                                            Въздуховоди</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="swiper-sub-category-2">
+                                        <span class="swiper-sub-category-title">Downdraft аспиратори</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="swiper-sub-category-3">
+                                        <span class="swiper-sub-category-title">Аспиратори за вграждане</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="swiper-sub-category-4">
+                                        <span class="swiper-sub-category-title">Декоративни аспиратори (за стенен
+                                            монтаж)</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="swiper-sub-category-5">
+                                        <span class="swiper-sub-category-title">Островни аспиратори</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next-b"></div>
+                            <div class="swiper-button-prev-b"></div>
+                        </div>
+                    </div>
+                    <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 518.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale"> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 519.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale"> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 520.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale"> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 521.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale" hidden> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 522.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale" hidden> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 523.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale" hidden> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 524.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale" hidden> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 525.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale" hidden> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 526.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale" hidden> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 527.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale" hidden> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 528.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale" hidden> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 product">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="assets/images/products/Rectangle 529.png" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body">
+                                    <div class="">
+                                        <!-- Product name-->
+                                        <h5 class="product-title fw-bolder">АБСОРБАТОР ЗА СТЕНЕН МОНТАЖ PYRAMIS AGILO
+                                            60/90</h5>
+                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur. Donec
+                                            amet sed turpis tincidunt. Eu netus nec erat elit vitae.</p>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex  small text-warning mb-2">
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start-y"></div>
+                                            <div class="start"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="d-flex card-footer  pt-0 border-top-0 bg-transparent">
+                                    <!-- Product price-->
+                                    <div class="product-price-box d-flex  ms-1">
+                                        <div class="d-flex">
+                                            <span class="product-price-discount">599</span>
+                                            <span class="product-price-discount-coin">00</span>
+                                            <span class="product-price-discount-currency">лв.</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <span class="product-price">799</span>
+                                            <span class="product-price-coin" hidden>00</span>
+                                            <span class="product-price-currency">лв</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center"><a class="btn btn-pink-r mt-auto" href="#"><img width="50"
+                                                height="30" src="assets/icons/shopping-cart-w.svg" alt="..."></a>
+                                    </div>
+                                </div>
+                                <span class="badge-sale" hidden> -7%</span>
+                                <div class="product-links">
+                                    <a class="product-compare"><img width="20" height="20"
+                                            src="assets/icons/left-and-right-arrows 1.svg" alt="..."></a>
+                                    <a class="add_to_wishlist"><img width="20" height="20" src="assets/icons/like.svg"
+                                            alt="..."></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <nav class=" col-12 mt-4 mb-5" aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="page-item first disabled"><a class="page-link" href="#"><img
+                                    src="assets/icons/arrow-left-p.svg"></a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item last"><a class="page-link" href="#"><img
+                                    src="assets/icons/arrow-right-p.svg"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="  footer">
+        <!-- Section: Form -->
+        <section class="top mb-5">
+            <div class="container">
+                <form action="">
+                    <div class="row align-items-center my-4 py-4">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <p class="mb-0 fw-osb h3 text-white">Научавай първи за
+                                нови продукти и промоции!</p>
+                        </div>
+                        <div class="col-md-3 mb-4 mb-md-0">
+                            <input type="text" value="" name="name" placeholder="Въведете Име" class="required email form-control fw-ol text-lg input-lg" id="name" required="">
+                        </div>
+                        <div class="col-md-3 mb-4 mb-md-0">
+
+                            <input type="email" value="" name="email" placeholder="Въведете Емайл" class="required email form-control fw-ol text-lg input-lg" id="email" required="">
+                            <div id="responses" class="">
+                                <div class="response" id="msg-response" style="display:none"></div>    
+                            </div>   
+                        </div>
+                        <div class="col-md-2 text-center text-md-start">
+                            <input type="submit" value="абонирай се" name="subscribe" id="subscribe" class="btn btn-subscribe text-white">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Section: Form -->
+        <!-- Section: Links -->
+        <section class="middle mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="">За Нас</h5>
+                        <p>AspiratorBG е специализиран онлайн магазин за уреди за вграждане (аспиратори, фурни, стъклокерамични плотове, мивки, хладилници, съдомиялни …)</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="">Полезни линкове</h5>
+
+                        <ul class=" mb-0">
+                            <li>
+                                <a class="" href="#!">Начало</a>
+                            </li>
+                            <li>
+                                <a class="" href="#!">Категории</a>
+                            </li>
+                            <li>
+                                <a class="" href="#!">За Нас</a>
+                            </li>
+                            <li>
+                                <a class="" href="#!">Новини</a>
+                            </li>
+                            <li>
+                                <a class="" href="#!">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+
+                
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="">Информация</h5>
+
+                        <ul class=" mb-0">
+                            <li>
+                                <a class="" href="#!">Условия за доставка</a>
+                            </li>
+                            <li>
+                                <a class="" href="#!">Условия за ползване</a>
+                            </li>
+                            <li>
+                                <a class="" href="#!">Политика на поверителност</a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="">Информация</h5>
+
+                        <ul class=" mb-0">
+                            <li>
+                                <a class="nav-link" aria-current="page" href="mailto:OFFICE@ASPIRATOR.BG">
+                                    <img src="assets/icons/envelope.svg" width="10" height="10">
+                                    <span >OFFICE@ASPIRATOR.BG</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" aria-current="page" href="tell://0882 62 38 31">
+                                    <img src="assets/icons/phone-alt.svg" width="10" height="10">
+                                    <span >0882 62 38 31</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" aria-current="page" href="#!">
+                                    <img src="assets/icons/facebook-f.svg" width="10" height="10">
+                                    <span >Aspirator.bg</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!-- Copyright -->
+        <div class="bottom py-4">
+            <div class="container d-flex justify-content-end">Изработено от<a class="text-reset fw-bold" href="https://rocket.bg/"><img src="assets/images/rockets.png"></a>
+            </div>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 1,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+        });
+
+        var swiper = new Swiper(".categorySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 1,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next-b",
+                prevEl: ".swiper-button-prev-b",
+            },
+
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add a click event listener to toggle the visibility of the ul
+            var navLinks = document.querySelectorAll('.nav-title');
+            navLinks.forEach(function (navLink) {
+                navLink.addEventListener('click', function () {
+                    var siblingUl = this.nextElementSibling;
+                    var arrow = this.querySelector('i');
+                    if (siblingUl) {
+                        siblingUl.classList.toggle('show');
+                        arrow.classList.toggle('up');
+                    }
+                });
+            });
+        });
+
+
+        
+    </script>
+</body>
+
+</html>
