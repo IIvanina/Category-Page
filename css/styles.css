@@ -5494,9 +5494,7 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
-  main {
-    width: 100% !important;
-  }
+ 
   .list-group-horizontal-md {
     flex-direction: row;
   }
