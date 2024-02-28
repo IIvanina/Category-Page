@@ -11681,6 +11681,36 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+.filter .card-header > a:before {
+  float: right !important;
+  font-family: FontAwesome;
+  content: url(../assets/icons/plus.svg);
+  padding-right: 5px;
+  line-height: 0;
+  order: 2;
+}
+
+.filter .card-header > a.collapsed:before {
+  float: right !important;
+  content: url(../assets/icons/minus.svg);
+}
+
+.filter .card-header > a:hover,
+.filter .card-header > a:active,
+.filter .card-header > a:focus {
+  text-decoration: none;
+}
+
+.filter .card-header > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter .card-header > h5 {
+  margin-bottom: 0px;
+}
+
 @media (max-width: 1199px) {
   .free__delivery__box {
     display: none !important;
