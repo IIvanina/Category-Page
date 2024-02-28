@@ -11674,6 +11674,10 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+#main_nav {
+  width: 100%;
+}
+
 @media (max-width: 1199px) {
   .free__delivery__box {
     display: none !important;
