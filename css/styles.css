@@ -11483,8 +11483,12 @@ textarea.form-control-lg {
   display: inherit;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   /* Show the list items on smaller screens */
+   #widgets_collapse {
+    margin: 20px;
+  }
+  
   .list-unstyled {
       display: none;
   }
@@ -11668,5 +11672,11 @@ textarea.form-control-lg {
 .footer li {
   padding-left: 0;
   list-style: none;
+}
+
+@media (max-width: 1199px) {
+  .free__delivery__box {
+    display: none !important;
+  }
 }
 
